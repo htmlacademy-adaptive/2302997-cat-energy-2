@@ -20,12 +20,12 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
+            <li class="main-nav__item">
               <a href="#">
                 Главная
               </a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--active">
               <a href="#">
                 Каталог продукции
               </a>
@@ -48,12 +48,18 @@
               <img src="images/catalog-1.png" alt="Cat Energy PRO 500 г" height="172" width="161">
               <h2 class="catalog__name">Cat Energy PRO 500 г</h2>
               <dl class="catalog__description-list">
-                <dt class="catalog__description-products">Масса</dt>
-                <dd class="catalog__description-value">500 г</dd>
-                <dt class="catalog__description-products">Вкус</dt>
-                <dd class="catalog__description-value">Курица</dd>
-                <dt class="catalog__description-products">Цена</dt>
-                <dd class="catalog__description-value">700 ₽</dd>
+                <div class="catalog__description-wrapper">
+                  <dt class="catalog__description-products">Масса</dt>
+                  <dd class="catalog__description-value">500 г</dd>
+                </div>
+                <div class="catalog__description-wrapper">
+                  <dt class="catalog__description-products">Вкус</dt>
+                  <dd class="catalog__description-value">Курица</dd>
+                </div>
+                <div class="catalog__description-wrapper">
+                  <dt class="catalog__description-products">Цена</dt>
+                  <dd class="catalog__description-value">700 ₽</dd>
+                </div>
               </dl>
               <button class="catalog__button button button--order" type="button">Заказать</button>
             </li>
@@ -147,33 +153,41 @@
         <div class="additional__wrapper">
         <h1 class="additional__title">Дополнительные товары</h1>
         <div class="additional__wrapper-table">
-          <h2 class="additional__title">Сахарозаменитель</h2>
-          <div class="additional__title-wrapper">
-            <span class="additional__value">1 упаковка (100 г)</span>
-            <span class="additional__price">200 ₽</span>
+          <div class="additional__wrapper-card">
+            <h2 class="additional__title">Сахарозаменитель</h2>
+            <div class="additional__title-wrapper">
+              <span class="additional__value">1 упаковка (100 г)</span>
+              <span class="additional__price">200 ₽</span>
+            </div>
+            <button class="additional__button button button--order" type="button">Заказать</button>
           </div>
-          <button class="additional__button button button--order" type="button">Заказать</button>
-          <h2 class="additional__title">Питьевая вода</h2>
-          <div class="additional__title-wrapper">
-            <span class="additional__value">5 литров</span>
-            <span class="additional__price">50 ₽</span>
+          <div class="additional__wrapper-card">
+            <h2 class="additional__title">Питьевая вода</h2>
+            <div class="additional__title-wrapper">
+              <span class="additional__value">5 литров</span>
+              <span class="additional__price">50 ₽</span>
+            </div>
+            <button class="additional__button button button--order" type="button">Заказать</button>
           </div>
-          <button class="additional__button button button--order" type="button">Заказать</button>
-          <h2 class="additional__title">Молоко</h2>
-          <div class="additional__title-wrapper">
-            <span class="additional__value">1 литр</span>
-            <span class="additional__price">100 ₽</span>
+          <div class="additional__wrapper-card">
+            <h2 class="additional__title">Молоко</h2>
+            <div class="additional__title-wrapper">
+              <span class="additional__value">1 литр</span>
+              <span class="additional__price">100 ₽</span>
+            </div>
+            <button class="additional__button button button--order" type="button">Заказать</button>
           </div>
-          <button class="additional__button button button--order" type="button">Заказать</button>
-          <h2 class="additional__title">Витамины</h2>
-          <div class="additional__title-wrapper">
-            <span class="additional__value">1 упаковка (30 г)</span>
-            <span class="additional__price">300 ₽</span>
+          <div class="additional__wrapper-card">
+            <h2 class="additional__title">Витамины</h2>
+            <div class="additional__title-wrapper">
+              <span class="additional__value">1 упаковка (30 г)</span>
+              <span class="additional__price">300 ₽</span>
+            </div>
+            <button class="additional__button button button--order" type="button">Заказать</button>
           </div>
-          <button class="additional__button button button--order" type="button">Заказать</button>
         </div>
-        <div class="additional__wrapper-present">
-          <p class="additional__wrapper-present-text">Закажите все
+        <div class="present__wrapper">
+          <p class="present__text">Закажите все
             и получите чехол для
             кота в подарок!</p>
         </div>
@@ -189,14 +203,14 @@
           </form>
         </div>
       </section>
-      <section class="card">
-        <div class="card__wrapper">
+      <section class="map">
+        <div class="map__wrapper">
           <img src="images/card.png" alt="Карта" width="1440" height="400">
         </div>
-        <div class="card__contacts">
+        <div class="map__contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <b class="card__title">Приглашаем к сотрудничеству дилеров!</b>
-          <address class="card__adress">
+          <b class="map__title">Приглашаем к сотрудничеству дилеров!</b>
+          <address class="map__adress">
             ул. Большая Конюшенная, д. 19/8<br>
             Санкт-Петербург
           </address>
