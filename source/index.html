@@ -5,14 +5,22 @@
     <title>Кэт энэрджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo" href="#">
-        <img src="images/logoCatEnergy.svg" width="70" height="59" alt="Логотип Кэт энэрджи">
+        <picture>
+          <img src="images/logoCatEnergy.svg" width="70" height="59" alt="Логотип Кэт энэрджи">
+        </picture>
       </a>
       <a class="main-header__logo-text" href="#">
-        <img src="images/logoText.svg" width="118" height="21" alt="Логотип Кэт энэрджи">
+        <picture>
+          <img src="images/logoText.svg" width="118" height="21" alt="Логотип Кэт энэрджи">
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -46,7 +54,11 @@
           питание для котов</h1>
           <p class="nutrition__text">Занялся собой? Займись котом!</p>
           <button class="nutrition__button button button--primary" type="button">Подобрать программу</button>
-          <img src="images/productCatEnergy.png" alt="Корм cat energy" width="552" height="499">
+          <picture>
+            <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-can@1x.png 1x, images/index-can@2x.png 2x" >
+            <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
+            <img src="images/index-can-mob@1x.png" srcset="images/index-can-mob@2x.png 2x" alt="Продукт Cat Energy" width="280" height="270">
+          </picture>
         </div>
       </section>
       <section class="advantages">
@@ -101,11 +113,23 @@
           </div>
           <p class="example__cost">Затраты на питание:</p>
           <span class="example__price">15 000 РУБ.</span>
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/tablet-before@1x.png 1x, images/tablet-before@2x.png 2x">
+            <img src="images/mobile-before@1x.png" srcset="images/mobile-before@2x.png 2x" alt="Результат до" width="280" height="256">
+          </picture>
+          <picture>
+            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/tablet-after@1x.png 1x, images/tablet-after@2x.png 2x">
+            <img src="images/mobile-after@1x.png" srcset="images/mobile-after@2x.png 2x" alt="Результат после" width="280" height="256">
+          </picture>
         </div>
       </section>
       <section class="card">
         <div class="card__wrapper">
-          <img src="images/card.png" alt="Карта" width="1440" height="400">
+          <picture>
+            <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" >
+            <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x,  images/map-tablet@2x.png 2x">
+            <img src="images/map-mob@1x.png" srcset="images/map-mob@2x.png 2x" alt="Карта" width="320" height="362">
+          </picture>
         </div>
         <div class="card__contacts">
           <h2 class="visually-hidden">Контакты</h2>
