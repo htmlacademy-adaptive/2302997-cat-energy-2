@@ -2,6 +2,25 @@
 @import "./common/variables.scss";
 @import "./common/global.scss";
 @import "./common/fonts.scss";
+@import "./visually-hidden/fonts.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/page.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/nutrition.scss";
+@import "./blocks/button.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/features.scss";
+@import "./blocks/example.scss";
+@import "./blocks/card.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/logo-html.scss";
+@import "./blocks/main-catalog.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/additional.scss";
+@import "./blocks/present-wrapper.scss";
+@import "./blocks/action.scss";
+@import "./blocks/map.scss";
