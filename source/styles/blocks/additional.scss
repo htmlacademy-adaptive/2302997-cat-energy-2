@@ -7,8 +7,22 @@
 }
 
 .additional__title {
-
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 400;
 }
+
+.additional__subtitle {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 
 .additional__wrapper-table {
 
@@ -23,7 +37,11 @@
 }
 
 .additional__value {
-
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+  font-weight: 400;
 }
 
 .additional__price {
@@ -31,7 +49,13 @@
 }
 
 .additional__button {
-
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 
