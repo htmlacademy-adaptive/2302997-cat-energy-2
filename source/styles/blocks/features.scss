@@ -7,7 +7,11 @@
 }
 
 .features__title {
-
+  font-family: "Oswald", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 40px;
 }
 
 .features__list {
@@ -15,7 +19,12 @@
 }
 
 .features__item {
-
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  text-align: center;
+  list-style-type: none;
 }
 
 .features__item--leaf {
@@ -30,7 +39,7 @@
 
 }
 
-.features__item--clock {
+.features__item--clock  {
 
 }
 
