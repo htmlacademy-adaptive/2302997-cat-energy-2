@@ -21,8 +21,16 @@
   text-transform: uppercase;
   text-align: center;
   font-weight: 400;
-  background-image: url("/build/icons/stack.svg#cat-back-1");
 }
+
+.advantages__title--slimming {
+  background-image: url("./../../icons/stack.svg#cat-back-1");
+}
+
+.advantages__title--weight {
+  background-image: url("./../../icons/stack.svg#cat-back-2");
+}
+
 
 .advantages__descriptions {
   font-size: 14px;
