@@ -14,12 +14,16 @@
     <header class="main-header">
       <a class="main-header__logo" href="#">
         <picture>
-          <img src="images/logoCatEnergy.svg" width="70" height="59" alt="Логотип Кэт энэрджи">
+          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
         </picture>
       </a>
       <a class="main-header__logo-text" href="#">
         <picture>
-          <img src="images/logoText.svg" width="118" height="21" alt="Логотип Кэт энэрджи">
+          <source media="(min-width: 1440px)" srcset="images/logo-text.svg" width="118" height="21" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logo-text.svg" width="101" height="18" type="image/svg+xml">
+          <img src="images/logo-text.svg" width="101" height="18" alt="Логотип Cat Energy.">
         </picture>
       </a>
       <nav class="main-nav">
@@ -261,7 +265,9 @@
       <div class="main-footer__wrapper">
         <div class="main-footer__logo">
           <a class="main-footer__logo-text" href="#">
-            <img src="images/logoText.svg" width="118" height="21" alt="Логотип Кэт энэрджи">
+            <picture>
+              <img src="images/logo-text.svg" width="128" height="24" alt="Логотип HTML.">
+            </picture>
           </a>
         </div>
         <div class="main-footer__social social">
@@ -270,23 +276,32 @@
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">В контакте</span>
+                <picture>
+                  <img src="images/telegram.svg" width="28" height="22" alt="Логотип HTML.">
+                </picture>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Ютуб</span>
+                <picture>
+                  <img src="images/youtube.svg" width="28" height="22" alt="Логотип HTML.">
+                </picture>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Телеграмм</span>
+                <picture>
+                  <img src="images/vkontakte.svg" width="28" height="22" alt="Логотип HTML.">
+                </picture>
               </a>
             </li>
           </ul>
         </div>
         <div class="main-footer__logo-html logo-html">
           <p class="logo-html__title">HTML Academy</p>
-          <img src="images/logoHTML.svg" alt="Лого html" width="27" height="34">
+          <img src="images/logo-html.svg" width="33" height="38" alt="Логотип HTML.">
         </div>
       </div>
     </footer>
