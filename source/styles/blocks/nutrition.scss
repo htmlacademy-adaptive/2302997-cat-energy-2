@@ -10,7 +10,16 @@ position: relative;
   display: block;
   position: absolute;
   z-index: -1;
-  
+}
+
+.nutrition::after {
+  background-image: url("source/images/index-background-mob@1x.webp");
+  min-height: 302px;
+  width: 100%;
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
 }
 
 .nutrition__wrapper {
