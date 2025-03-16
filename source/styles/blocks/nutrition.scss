@@ -121,7 +121,8 @@
 
   @media (min-width: $desktop-width) {
     position: static;
-    top: unset;
+    transform: unset;
+    padding-right: 332px;
   }
 }
 
