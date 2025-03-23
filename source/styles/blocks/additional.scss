@@ -12,6 +12,24 @@
   line-height: 24px;
   color: #000000;
   font-weight: 400;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 74px;
+    margin-bottom: 80px;
+    font-size: 32px;
+    line-height: 32px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .additional__subtitle {
@@ -21,6 +39,18 @@
   color: #222222;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 164px;
+  }
 }
 
 
@@ -29,21 +59,31 @@
 }
 
 .additional__wrapper-card {
-
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .additional__title-wrapper {
-
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .additional__value {
   font-size: 14px;
   line-height: 14px;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 164px;
+  }
 }
 
 .additional__price {
-
+  @media (min-width: $tablet-width) {
+    margin-right: 40px;
+  }
 }
 
 .additional__button {
@@ -56,5 +96,52 @@
   text-transform: uppercase;
   background: #68B738;
   border: none;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+  }
+}
+
+.present-wrapper {
+  position: relative;
+  background-image: url("./../../images/present-cat@1x.webp");
+  margin-bottom: 40px;
+}
+
+.present-wrapper__text {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #68B738;
+  padding-top: 186px;
+  padding-bottom: 43px;
+  margin: 0;
+}
+
+.present-wrapper__text::after {
+  background-image: url("./../../icons/stack.svg#icon-gift");
+  display: block;
+  width: 78px;
+  height: 80px;
+  content: "";
+  position: absolute;
+  bottom: 100px;
+  right: 130px;
+}
+
+.wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 

@@ -12,6 +12,21 @@
   line-height: 24px;
   color: #000000;
   font-weight: 400;
+  margin: 0;
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+    padding-left: 40px;
+    padding-bottom: 66px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 40px;
+    padding-left: 0;
+  }
 }
 
 .action__text {
@@ -19,10 +34,52 @@
   font-size: 16px;
   line-height: 24px;
   color: #000000;
+  margin: 0;
+  padding-bottom: 24px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
 }
 
 .action__form {
+  display: flex;
+  flex-direction: column;
 
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    margin-left: 38px;
+    margin-right: 38px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 244px;
+  }
+}
+
+.email-input::placeholder {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: #444444;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.email-input {
+  padding-top: 23px;
+  padding-bottom: 13px;
+  padding-left: 13px;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 376px;
+  }
 }
 
 .action__button {
@@ -34,5 +91,12 @@
   background-color: #68B738;
   text-transform: uppercase;
   border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+  }
 }
 
