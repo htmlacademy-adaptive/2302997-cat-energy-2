@@ -3,5 +3,18 @@
 }
 
 .page__body {
-  
+  position: relative;
+}
+
+.page__body::after {
+  @media (min-width: $desktop-width) {
+    content: "";
+    display: block;
+    background-color: #68B738D9;
+    position: absolute;
+    width: 50%;
+    height: 620px;
+    bottom: 2800px;
+    left: 952px;
+  }
 }

@@ -45,7 +45,17 @@
 }
 
 .main-nav__item--active {
+  position: relative;
+}
 
+.main-nav__item--active::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #68B738;
+  top: 30px;
 }
 
 .main-nav__link {
@@ -55,4 +65,7 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+  }
 }

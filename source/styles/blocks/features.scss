@@ -36,6 +36,7 @@
 
 .features__list {
   padding: 0;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -50,6 +51,17 @@
   }
 }
 
+.features__list--1::before {
+  content: "1";
+  display: block;
+  position: absolute;
+  font-size: 280px;
+  font-family: "Oswald", sans-serif;
+  color: #F2F2F2;
+  top: -60px;
+  left: 110px;
+}
+
 .features__item {
   font-size: 14px;
   line-height: 18px;
@@ -59,6 +71,7 @@
   text-align: start;
   padding-left: 100px;
   margin-bottom: 24px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -79,6 +92,7 @@
   position: relative;
 }
 
+
 .features__item--leaf::after {
   background-image: url("./../../icons/stack.svg#leaf");
   width: 30px;
@@ -95,7 +109,7 @@
   }
 }
 
-.features__item--leaf::before {
+.features__item::before {
   background-color: #68B738;
   width: 60px;
   height: 60px;
@@ -118,7 +132,6 @@
 
 .features__item--water::after {
   background-image: url("./../../icons/stack.svg#powder");
-  background-color: #68B738;
   width: 30px;
   height: 32px;
   content: "";
@@ -130,23 +143,6 @@
   @media (min-width: $tablet-width) {
     top: 70px;
     left: 25px;
-  }
-}
-
-.features__item--water::before {
-  background-color: #68B738;
-  width: 60px;
-  height: 60px;
-  content: "";
-  display: block;
-  position: absolute;
-  top: -2px;
-  left: 1px;
-
-  @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
-    top: 50px;
   }
 }
 
@@ -170,23 +166,6 @@
   }
 }
 
-.features__item--fork::before {
-  background-color: #68B738;
-  width: 60px;
-  height: 60px;
-  content: "";
-  display: block;
-  position: absolute;
-  top: -2px;
-  left: 1px;
-
-  @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
-    top: 50px;
-  }
-}
-
 .features__item--clock {
   position: relative;
 }
@@ -206,22 +185,3 @@
     left: 25px;
   }
 }
-
-.features__item--clock::before {
-  background-color: #68B738;
-  width: 60px;
-  height: 60px;
-  content: "";
-  display: block;
-  position: absolute;
-  top: -2px;
-  left: 1px;
-
-  @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
-    top: 50px;
-  }
-}
-
-

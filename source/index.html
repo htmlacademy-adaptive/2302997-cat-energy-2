@@ -89,7 +89,7 @@
       <section class="features">
         <div class="features__wrapper">
           <h2 class="features__title">Как это работает</h2>
-          <ul class="features__list">
+          <ul class="features__list features__list--1  features__list--2">
             <li class="features__item features__item--leaf">Функциональное питание
               содержит только полезные
               питательные вещества.</li>
@@ -116,23 +116,25 @@
             <div class="example_result">
             <div class="example__result-wrapper">
               <p class="example__result-significance">5 КГ</p>
-              <span class="example__result-description">cнижение веса</span>
+              <span class="example__result-description">cнижение<br> веса</span>
             </div>
             <div class="example__result-wrapper">
-              <p class="example__result-significance">60 ДНЕЙ</p>
-              <span class="example__result-description">затрачено времени</span>
+              <p class="example__result-significance example__result-significance--second">60 ДНЕЙ</p>
+              <span class="example__result-description">затрачено<br class="br"> времени</span>
             </div>
             </div>
             <p class="example__cost">Затраты на питание: 15 000 РУБ.</p>
           </div>
-          <picture>
-            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/tablet-before@1x.png 1x, images/tablet-before@2x.png 2x">
-            <img src="images/mobile-before@1x.png" srcset="images/mobile-before@2x.png 2x" alt="Результат до" width="280" height="256">
-          </picture>
-          <picture>
-            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/tablet-after@1x.png 1x, images/tablet-after@2x.png 2x">
-            <img src="images/mobile-after@1x.png" srcset="images/mobile-after@2x.png 2x" alt="Результат после" width="280" height="256">
-          </picture>
+          <div class="example__picture-container">
+            <picture class="background-image">
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/tablet-before@1x.png 1x, images/tablet-before@2x.png 2x">
+              <img src="images/mobile-before@1x.png" srcset="images/mobile-before@2x.png 2x" alt="Результат до" width="280" height="256">
+            </picture>
+            <picture class="overlay-image">
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/tablet-after@1x.png 1x, images/tablet-after@2x.png 2x">
+              <img src="images/mobile-after@1x.png" srcset="images/mobile-after@2x.png 2x" alt="Результат после" width="280" height="256">
+            </picture>
+          </div>
         </div>
       </section>
       <section class="map">
@@ -146,9 +148,9 @@
             </address>
           </div>
           <picture class="map_picture">
-            <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" >
-            <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x,  images/map-tablet@2x.png 2x">
-            <img src="images/map-mob@1x.png" srcset="images/map-mob@2x.png 2x" alt="Карта" width="320" height="362">
+            <source width="100%" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" >
+            <source width="100%" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x,  images/map-tablet@2x.png 2x">
+            <img class="map_picture-img" src="images/map-mob@1x.png" srcset="images/map-mob@2x.png 2x" alt="Карта" width="100%" height="362">
           </picture>
         </div>
       </section>
@@ -163,13 +165,12 @@
         <div class="main-footer__social social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">В контакте</span>
-                <picture>
-                  <img src="images/telegram.svg" width="28" height="22" alt="Логотип HTML.">
-                </picture>
-              </a>
+            <li class="social__item"><a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграмм</span>
+              <picture>
+                <img src="images/vkontakte.svg" width="28" height="22" alt="Логотип HTML.">
+              </picture>
+            </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
@@ -180,10 +181,10 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Телеграмм</span>
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">В контакте</span>
                 <picture>
-                  <img src="images/vkontakte.svg" width="28" height="22" alt="Логотип HTML.">
+                  <img src="images/telegram.svg" width="28" height="22" alt="Логотип HTML.">
                 </picture>
               </a>
             </li>

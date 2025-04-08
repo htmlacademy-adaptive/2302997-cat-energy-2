@@ -84,6 +84,9 @@
 }
 
 .example__result-wrapper {
+  border: #CDCDCD solid 1px;
+  position: relative;
+
   @media (min-width: $tablet-width) {
     margin-right: 43px;
   }
@@ -97,11 +100,19 @@
   margin: 0;
   padding-top: 14px;
   padding-left: 43px;
+  padding-right: 43px;
+  padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    padding-bottom: 1px;
   }
+}
+
+.example__result-significance--second {
+  padding-left: 20px;
+  padding-right: 21px;
 }
 
 .example__result-description {
@@ -109,10 +120,19 @@
   line-height: 12px;
   color: #444444;
   text-align: center;
+  display: block;
+  position: absolute;
+  bottom: -17px;
+  left: 20px;
+  background-color: #EAEAEA;
+  padding-left: 17px;
+  padding-right: 17px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
+    bottom: -1px;
+    background-color: #ffFfFf;
   }
 }
 
@@ -122,7 +142,7 @@
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 38px;
   margin-bottom: 20px;
   text-align: center;
 
@@ -148,5 +168,26 @@
 
   @media (min-width: $desktop-width) {
     display: unset;
+  }
+}
+
+.example__picture-container {
+  position: relative;
+}
+
+.background-image {
+
+}
+
+.overlay-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.br {
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
