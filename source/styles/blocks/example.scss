@@ -89,6 +89,7 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 43px;
+    height: 77px;
   }
 }
 
@@ -106,13 +107,14 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-    padding-bottom: 1px;
+    padding-left: 57px;
+    padding-right: 57px;
   }
 }
 
 .example__result-significance--second {
-  padding-left: 20px;
-  padding-right: 21px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .example__result-description {
@@ -125,14 +127,17 @@
   bottom: -17px;
   left: 20px;
   background-color: #EAEAEA;
-  padding-left: 17px;
-  padding-right: 17px;
+  padding-left: 4px;
+  max-width: 77px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
-    bottom: -1px;
+    bottom: -4px;
     background-color: #ffFfFf;
+    max-width: 125px;
+    padding-left: 7px;
+    padding-right: 7px;
   }
 }
 
@@ -186,8 +191,3 @@
   transform: translate(-50%, -50%);
 }
 
-.br {
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-}
