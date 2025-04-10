@@ -124,18 +124,20 @@
   text-align: center;
   display: block;
   position: absolute;
-  bottom: -17px;
-  left: 20px;
   background-color: #EAEAEA;
-  padding-left: 4px;
+  padding-left: 7px;
+  padding-right: 7px;
   max-width: 77px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
-    bottom: -4px;
+    bottom: -14px;
     background-color: #ffFfFf;
-    max-width: 125px;
+    max-width: 135px;
     padding-left: 7px;
     padding-right: 7px;
   }
