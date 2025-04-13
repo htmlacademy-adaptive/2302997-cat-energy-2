@@ -124,9 +124,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: static;
+    position: absolute;
     transform: unset;
-    padding-right: 332px;
+    z-index: 5;
+    top: 0;
+    left: 800px;
   }
 }
 
