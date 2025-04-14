@@ -54,7 +54,9 @@
     height: 694px;
     top: -60px;
     right: 0;
-    background-image: url("./../../images/green-cat@1x.webp");
+    background-image: url("./../../images/index-background-desktop@1x.webp");
     background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
   }
 }

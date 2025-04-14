@@ -88,15 +88,17 @@
 }
 
 .features__item--leaf::before {
-  content: "1";
-  display: block;
-  position: absolute;
-  font-size: 280px;
-  font-family: "Oswald", sans-serif;
-  color: #F2F2F2;
-  left: 120px;
-  z-index: -5;
-  top: 123px;
+  @media (min-width: $tablet-width) {
+    content: "1";
+    display: block;
+    position: absolute;
+    font-size: 280px;
+    font-family: "Oswald", sans-serif;
+    color: #F2F2F2;
+    left: 120px;
+    z-index: -5;
+    top: 123px;
+  }
 }
 
 .features__item--water::after {
@@ -110,15 +112,17 @@
 }
 
 .features__item--water::before {
-  content: "2";
-  display: block;
-  position: absolute;
-  font-size: 280px;
-  font-family: "Oswald", sans-serif;
-  color: #F2F2F2;
-  left: 120px;
-  z-index: -5;
-  top: 123px;
+  @media (min-width: $tablet-width) {
+    content: "2";
+    display: block;
+    position: absolute;
+    font-size: 280px;
+    font-family: "Oswald", sans-serif;
+    color: #F2F2F2;
+    left: 120px;
+    z-index: -5;
+    top: 123px;
+  }
 }
 
 .features__item--fork::after {
@@ -132,15 +136,17 @@
 }
 
 .features__item--fork::before {
-  content: "3";
-  display: block;
-  position: absolute;
-  font-size: 280px;
-  font-family: "Oswald", sans-serif;
-  color: #F2F2F2;
-  left: 120px;
-  z-index: -5;
-  top: 123px;
+  @media (min-width: $tablet-width) {
+    content: "3";
+    display: block;
+    position: absolute;
+    font-size: 280px;
+    font-family: "Oswald", sans-serif;
+    color: #F2F2F2;
+    left: 120px;
+    z-index: -5;
+    top: 123px;
+  }
 }
 
 .features__item--clock::after {
@@ -154,15 +160,17 @@
 }
 
 .features__item--clock::before {
-  content: "4";
-  display: block;
-  position: absolute;
-  font-size: 280px;
-  font-family: "Oswald", sans-serif;
-  color: #F2F2F2;
-  left: 120px;
-  z-index: -5;
-  top: 123px;
+  @media (min-width: $tablet-width) {
+    content: "4";
+    display: block;
+    position: absolute;
+    font-size: 280px;
+    font-family: "Oswald", sans-serif;
+    color: #F2F2F2;
+    left: 120px;
+    z-index: -5;
+    top: 123px;
+  }
 }
 
 .features__item::after {

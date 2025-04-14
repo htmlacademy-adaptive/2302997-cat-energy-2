@@ -236,32 +236,32 @@
                 <span class="additional__value">1 упаковка (100 г)</span>
                 <span class="additional__price">200 ₽</span>
               </div>
-              <button class="additional__button button button--order" type="button">Заказать</button>
             </div>
+            <button class="additional__button button button--order" type="button">Заказать</button>
             <div class="additional__wrapper-card">
               <h2 class="additional__subtitle">Питьевая вода</h2>
               <div class="additional__title-wrapper">
                 <span class="additional__value">5 литров</span>
                 <span class="additional__price">50 ₽</span>
               </div>
-              <button class="additional__button button button--order" type="button">Заказать</button>
             </div>
+            <button class="additional__button button button--order" type="button">Заказать</button>
             <div class="additional__wrapper-card">
               <h2 class="additional__subtitle">Молоко</h2>
               <div class="additional__title-wrapper">
                 <span class="additional__value">1 литр</span>
                 <span class="additional__price">100 ₽</span>
               </div>
-              <button class="additional__button button button--order" type="button">Заказать</button>
             </div>
+            <button class="additional__button button button--order" type="button">Заказать</button>
             <div class="additional__wrapper-card">
               <h2 class="additional__subtitle">Витамины</h2>
               <div class="additional__title-wrapper">
                 <span class="additional__value">1 упаковка (30 г)</span>
                 <span class="additional__price">300 ₽</span>
               </div>
-              <button class="additional__button button button--order" type="button">Заказать</button>
             </div>
+            <button class="additional__button button button--order" type="button">Заказать</button>
           </div>
           <div class="present-wrapper">
             <p class="present-wrapper__text">Закажите все
@@ -281,20 +281,20 @@
           </form>
         </div>
       </section>
-      <section class="map">
-        <div class="map__contacts">
-          <h2 class="visually-hidden">Контакты</h2>
-          <b class="map__title">Приглашаем к сотрудничеству дилеров!</b>
-          <address class="map__adress">
-            ул. Большая Конюшенная, д. 19/8<br>
-            Санкт-Петербург
-          </address>
-        </div>
+      <section class="map map-catalog">
         <div class="map__wrapper">
-          <picture>
-            <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" >
-            <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x,  images/map-tablet@2x.png 2x">
-            <img src="images/map-mob@1x.png" srcset="images/map-mob@2x.png 2x" alt="Карта" width="320" height="362">
+          <div class="map__contacts">
+            <h2 class="visually-hidden">Контакты</h2>
+            <b class="map__title">Приглашаем к сотрудничеству дилеров!</b>
+            <address class="map__adress">
+              ул. Большая Конюшенная, д. 19/8<br>
+              <span class="map_span">Санкт-Петербург</span>
+            </address>
+          </div>
+          <picture class="map_picture">
+            <source width="100%" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" >
+            <source width="100%" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x,  images/map-tablet@2x.png 2x">
+            <img class="map_picture-img" src="images/map-mob@1x.png" srcset="images/map-mob@2x.png 2x" alt="Карта" width="100%" height="362">
           </picture>
         </div>
       </section>
@@ -302,22 +302,19 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <div class="main-footer__logo">
-          <a class="main-footer__logo-text" href="#">
-            <picture>
-              <img src="images/logo-text.svg" width="128" height="24" alt="Логотип HTML.">
-            </picture>
-          </a>
+          <picture class="main-footer__picture">
+            <img src="images/logo-text.svg" width="128" height="24" alt="Логотип HTML.">
+          </picture>
         </div>
         <div class="main-footer__social social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">В контакте</span>
-                <picture>
-                  <img src="images/telegram.svg" width="28" height="22" alt="Логотип HTML.">
-                </picture>
-              </a>
+            <li class="social__item"><a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Телеграмм</span>
+              <picture>
+                <img src="images/vkontakte.svg" width="28" height="22" alt="Логотип HTML.">
+              </picture>
+            </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
@@ -328,10 +325,10 @@
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Телеграмм</span>
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">В контакте</span>
                 <picture>
-                  <img src="images/vkontakte.svg" width="28" height="22" alt="Логотип HTML.">
+                  <img src="images/telegram.svg" width="28" height="22" alt="Логотип HTML.">
                 </picture>
               </a>
             </li>
@@ -339,7 +336,7 @@
         </div>
         <div class="main-footer__logo-html logo-html">
           <p class="logo-html__title">HTML Academy</p>
-          <img src="images/logo-html.svg" width="33" height="38" alt="Логотип HTML.">
+          <img class="logo-html-img" src="images/logo-html.svg" width="27" height="34" alt="Логотип HTML.">
         </div>
       </div>
     </footer>
