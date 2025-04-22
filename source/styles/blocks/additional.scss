@@ -1,5 +1,16 @@
 .additional {
+  margin-left: 20px;
+  margin-right: 20px;
 
+  @media (min-width: $tablet-width) {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
 }
 
 .additional__wrapper {
@@ -46,6 +57,12 @@
   @media (min-width: $tablet-width) {
     width: 357px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 80%;
+    top: 20px;
+    right: -110px;
+  }
 }
 
 .additional__title::after {
@@ -64,6 +81,12 @@
     height: 2px;
     top: 40px;
     left: -30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 20px;
+    left: -110px;
+    width: 4%;
   }
 }
 
@@ -102,7 +125,10 @@
 }
 
 .additional__wrapper-table {
-
+  @media (min-width: $desktop-width) {
+    width: 80%;
+    margin-right: 80px;
+  }
 }
 
 .additional__wrapper-card {
@@ -167,6 +193,12 @@
   background-image: url("./../../images/present-cat@1x.webp");
   margin-bottom: 40px;
   margin-top: 34px;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("./../../images/catcat2@1x.png");
+    height: 200px;
+  }
 }
 
 .present-wrapper::after {
@@ -184,11 +216,17 @@
   line-height: 20px;
   color: #ffffff;
   text-align: center;
-  background-color: #68B738;
   padding-top: 186px;
   padding-bottom: 43px;
   margin: 0;
   width: 161px;
+  padding-left: 85px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-top: 71px;
+    padding-left: 422px;
+  }
 }
 
 .present-wrapper__text::after {
@@ -198,8 +236,13 @@
   height: 80px;
   content: "";
   position: absolute;
-  bottom: 100px;
+  top: 60px;
   right: 130px;
+
+  @media (min-width: $tablet-width) {
+    top: 60px;
+    left: 93px;
+  }
 }
 
 .wrapper {
@@ -208,4 +251,3 @@
     justify-content: space-between;
   }
 }
-

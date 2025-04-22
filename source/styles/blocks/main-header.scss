@@ -30,31 +30,16 @@
   align-self: center;
 }
 
-.main-header::after {
-  @media (min-width: $desktop-width) {
-    content: "";
-    display: block;
-    background-color: #68B738D9;
-    position: absolute;
-    width: 50vw;
-    height: 694px;
-    top: -60px;
-    right: 0;
-    z-index: -1;
-    overflow: hidden;
-  }
-}
-
-.main-header::before {
+.main-header-pict::before {
   @media (min-width: $desktop-width) {
     content: "";
     display: block;
     position: absolute;
     width: 50vw;
-    height: 694px;
+    height: 794px;
     top: -60px;
     right: 0;
-    background-image: url("./../../images/index-background-desktop@1x.webp");
+    background-image: url("./../../images/group@1x.png");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;

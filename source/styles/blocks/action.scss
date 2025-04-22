@@ -1,5 +1,16 @@
 .action {
+  margin-left: 20px;
+  margin-right: 20px;
 
+  @media (min-width: $tablet-width) {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+    margin-right: 110px;
+  }
 }
 
 .action__wrapper {
@@ -28,6 +39,7 @@
     font-size: 40px;
     line-height: 40px;
     padding-left: 0;
+    margin-left: 0;
   }
 }
 
@@ -35,11 +47,22 @@
   position: absolute;
   display: block;
   content: "";
-  width: 456px;
+  width: 170px;
   height: 2px;
   background-color: #68B738;
-  top: 18px;
+  top: 10px;
   right: -30px;
+
+  @media (min-width: $tablet-width) {
+    width: 385px;
+    top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 88%;
+    top: 20px;
+    right: -110px;
+  }
 }
 
 .action__title::before {
@@ -51,6 +74,12 @@
   background-color: #68B738;
   top: 18px;
   left: -70px;
+
+  @media (min-width: $desktop-width) {
+    top: 20px;
+    left: -110px;
+    width: 4%;
+  }
 }
 
 .action__text {
@@ -71,6 +100,10 @@
     text-align: center;
     width: 632px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 700px;
   }
 }
 
@@ -112,6 +145,13 @@
     flex-direction: row;
     margin-left: 38px;
     margin-right: 38px;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 752px;
+    margin: 0 auto;
+    margin-bottom: 104px;
   }
 }
 
@@ -132,9 +172,15 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: 378px;
     border: 1px solid #CDCDCD;
     padding: 0;
+    margin: 0;
+    padding-left: 13px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 496px;
   }
 }
 
@@ -154,6 +200,7 @@
 
   @media (min-width: $tablet-width) {
     width: 256px;
+    margin: 0;
   }
 }
 
