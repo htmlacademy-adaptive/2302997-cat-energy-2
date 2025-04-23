@@ -110,6 +110,14 @@
   }
 }
 
+.nutrition__link:hover {
+  background-color: #5EAA2F;
+}
+
+.nutrition__link:active{
+  color: rgba(95, 172, 47, 0.9);
+}
+
 .nutrition_img {
   position: absolute;
   top: 60px;

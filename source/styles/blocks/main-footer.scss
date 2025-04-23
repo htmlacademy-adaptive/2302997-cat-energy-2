@@ -31,6 +31,7 @@
   display: flex;
   justify-content: center;
   position: relative;
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     padding: 0;
@@ -135,6 +136,22 @@
   }
 }
 
+.logo-html__title:active {
+  opacity: 0.2;
+}
+
 .logo-html-img {
 
+}
+
+.main-footer__link {
+  text-decoration: none;
+}
+
+.main-footer__picture:hover {
+  opacity: 0.8;
+}
+
+.main-footer__picture:active {
+  opacity: 0.5;
 }

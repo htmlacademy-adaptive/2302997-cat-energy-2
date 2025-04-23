@@ -165,11 +165,15 @@
 }
 
 .email-input {
-  padding-top: 23px;
+  padding-top: 13px;
   padding-bottom: 13px;
   padding-left: 13px;
   margin-bottom: 16px;
   border: none;
+  font-family: "Oswald", sans-serif;
+  color: #444444;
+  font-size: 20px;
+  line-height: 20px;
 
   @media (min-width: $tablet-width) {
     width: 378px;
@@ -182,6 +186,10 @@
   @media (min-width: $tablet-width) {
     width: 496px;
   }
+}
+
+.email-input:focus::placeholder {
+  opacity: 0;
 }
 
 .action__button {
