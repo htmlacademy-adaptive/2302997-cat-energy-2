@@ -258,6 +258,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 25px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 250px;
@@ -266,8 +267,17 @@
   }
 
   @media (min-width: $desktop-width) {
-   width: 80%;
+   width: 100%;
   }
+}
+
+.catalog__button:hover {
+  background-color: #5EAA2F;
+}
+
+.catalog__button:active{
+  background-color: #5EAA2F;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .catalog__button::after {
@@ -286,6 +296,17 @@
 }
 
 .catalog__item-white {
-  background-color: #ffffff;
-  border: 2px solid #F2F2F2;
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    border: 2px solid #F2F2F2;
+  }
+}
+
+.button--show:hover {
+  background-color: #EBEBEB;
+}
+
+.button--show:active{
+  background-color: #EBEBEB;
+  color: #444444;
 }

@@ -61,7 +61,6 @@
   }
 }
 
-
 .advantages__title--slimming::after {
   background-image: url("./../../icons/stack.svg#cat-back-1");
   width: 50px;
@@ -190,4 +189,19 @@
     left: 180px;
     top: 5px;
   }
+}
+
+.advantages__link:hover::before {
+  transform: scale(1.4);
+  left: 187px;
+}
+
+.advantages__link:active::before {
+  transform: scale(1.4);
+  left: 187px;
+  opacity: 0.3;
+}
+
+.advantages__link:active {
+  opacity: 0.3;
 }
