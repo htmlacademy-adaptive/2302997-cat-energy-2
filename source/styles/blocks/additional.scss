@@ -17,6 +17,10 @@
 
 }
 
+.wrapper {
+  display: flex;
+}
+
 .additional__title {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
@@ -151,6 +155,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
     width: 100%;
   }
 }
