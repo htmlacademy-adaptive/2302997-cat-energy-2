@@ -231,7 +231,7 @@
 }
 
 .background-image {
-
+  
 }
 
 .overlay-image {
@@ -239,5 +239,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.cat-one {
+  clip-path: inset(0 50% 0 0);
+}
+
+.cat-two {
+  clip-path: inset(0 0 0 50%);
 }
 
