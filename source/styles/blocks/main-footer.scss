@@ -83,8 +83,17 @@
   margin-right: 24px;
 }
 
-.icons {
-  fill: #666666;
+.social__item a {
+  color: #666666;
+}
+
+.social__item a:hover {
+  color: #68B738;
+}
+
+.social__item a:active {
+  color: #68B738;
+  opacity: 0.5;
 }
 
 .main-footer__logo-text {
