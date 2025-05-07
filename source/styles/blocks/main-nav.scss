@@ -19,8 +19,6 @@
 }
 
 .main-nav__wrapper {
-  display: none;
-
   @media (min-width: $tablet-width) {
     display: block;
   }
@@ -28,9 +26,11 @@
 
 .main-nav__list {
   display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    flex-direction: unset;
   }
 }
 
