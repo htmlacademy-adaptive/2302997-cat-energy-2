@@ -217,7 +217,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 99px;
+    margin-bottom: 180px;
   }
 
   @media (min-width: $desktop-width) {
@@ -228,6 +228,18 @@
 .example__picture-container {
   position: relative;
   z-index: 3;
+  display: flex;
+  grid-column: 1/-1;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    bottom: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 500px;
+    left: 20%;
+  }
 }
 
 .background-image {
@@ -237,7 +249,7 @@
 .overlay-image {
   position: absolute;
   top: 50%;
-  left: 41%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
