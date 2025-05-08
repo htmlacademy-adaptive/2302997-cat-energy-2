@@ -41,7 +41,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 230px 230px;
-    column-gap: 153px;
+    column-gap: 35%;
     row-gap: 37px;
     margin: 0;
   }
@@ -73,7 +73,6 @@
   }
 
   @media (min-width: $desktop-width) {
-
     padding-bottom: 50px;
   }
 }
