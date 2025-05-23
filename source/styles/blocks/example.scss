@@ -54,7 +54,7 @@
 }
 
 .example__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
@@ -101,7 +101,7 @@
   }
 }
 
-.example_result {
+.example__result {
   display: flex;
   justify-content: space-between;
 
@@ -125,7 +125,7 @@
 }
 
 .example__result-significance {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
@@ -195,7 +195,7 @@
 }
 
 .example__cost {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
@@ -243,10 +243,6 @@
   }
 }
 
-.background-image {
-
-}
-
 .overlay-image {
   position: absolute;
   top: 50%;
@@ -262,3 +258,10 @@
   clip-path: inset(0 0 0 50%);
 }
 
+.example__picture-button {
+  background-image: url("./../../icons/stack.svg#curtain");
+  height: 256px;
+  width: 40px;
+  border: none;
+  position: absolute;
+}

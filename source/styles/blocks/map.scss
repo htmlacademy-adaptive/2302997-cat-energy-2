@@ -34,7 +34,7 @@
 }
 
 .map__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #111111;
@@ -66,11 +66,11 @@
   }
 }
 
-.map_picture {
+.map__picture {
   position: relative;
 }
 
-.map_picture::after {
+.map__picture::after {
   position: absolute;
   display: block;
   background-image: url("./../../icons/stack.svg#logo-desctop");
@@ -94,12 +94,12 @@
   }
 }
 
-.map_picture-img {
+.map__picture-img {
   display: block;
   object-fit: cover;
 }
 
-.map_span {
+.map__adress-city {
   @media (min-width: $tablet-width) {
     padding-top: 15px;
     display: block;
