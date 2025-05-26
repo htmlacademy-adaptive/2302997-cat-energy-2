@@ -1,11 +1,14 @@
 .main-header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   margin: 13px 21px 14px 20px;
 
   @media (min-width: $tablet-width) {
     margin: 25px 34px 65px 30px;
-    justify-content: unset;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -13,8 +16,14 @@
   }
 }
 
+.main-header__logo-wrapper {
+  margin-bottom: 10px;
+  display: flex;
+}
+
 .main-header__logo {
   height: 38px;
+  margin-right: 24%;
 
   @media (min-width: $tablet-width) {
     height: 50px;
@@ -26,6 +35,38 @@
   }
 }
 
+.main-header__logo:hover {
+  opacity: 0.8;
+}
+
+.main-header__logo:active {
+  opacity: 0.5;
+}
+
 .main-header__logo-text {
   align-self: center;
+}
+
+.main-header__logo-text:hover {
+  opacity: 0.8;
+}
+
+.main-header__logo-text:active {
+  opacity: 0.5;
+}
+
+.main-header-pict::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50vw;
+    height: 700px;
+    top: -60px;
+    right: 0;
+    background-image: url("./../../images/group@1x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
 }

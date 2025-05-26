@@ -18,7 +18,7 @@
 }
 
 .features__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: #000000;
   font-size: 36px;
   line-height: 40px;
@@ -36,17 +36,19 @@
 
 .features__list {
   padding: 0;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 230px 230px;
-    column-gap: 153px;
+    column-gap: 35%;
     row-gap: 37px;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 95px;
   }
 }
 
@@ -59,6 +61,7 @@
   text-align: start;
   padding-left: 100px;
   margin-bottom: 24px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -69,159 +72,125 @@
     padding-left: 0;
     padding-bottom: 57px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 50px;
+  }
 }
 
 .features__item:last-child {
   margin-bottom: 49px;
 }
 
-.features__item--leaf {
-  position: relative;
-}
-
 .features__item--leaf::after {
   background-image: url("./../../icons/stack.svg#leaf");
-  width: 30px;
-  height: 32px;
   content: "";
   display: block;
   position: absolute;
-  top: 10px;
-  left: 17px;
-
-  @media (min-width: $tablet-width) {
-    top: 70px;
-    left: 25px;
-  }
+  background-size: 26px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .features__item--leaf::before {
-  background-color: #68B738;
-  width: 60px;
-  height: 60px;
-  content: "";
-  display: block;
-  position: absolute;
-  top: -5px;
-  left: 1px;
-
   @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
-    top: 50px;
+    content: "1";
+    display: block;
+    position: absolute;
+    font-size: 280px;
+    font-family: "Oswald", sans-serif;
+    color: #F2F2F2;
+    left: 120px;
+    z-index: -5;
+    top: 123px;
   }
-}
-
-.features__item--water {
-  position: relative;
 }
 
 .features__item--water::after {
   background-image: url("./../../icons/stack.svg#powder");
-  background-color: #68B738;
-  width: 30px;
-  height: 32px;
   content: "";
   display: block;
   position: absolute;
-  top: 10px;
-  left: 17px;
-
-  @media (min-width: $tablet-width) {
-    top: 70px;
-    left: 25px;
-  }
+  background-size: 27px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .features__item--water::before {
-  background-color: #68B738;
-  width: 60px;
-  height: 60px;
-  content: "";
-  display: block;
-  position: absolute;
-  top: -2px;
-  left: 1px;
-
   @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
-    top: 50px;
+    content: "2";
+    display: block;
+    position: absolute;
+    font-size: 280px;
+    font-family: "Oswald", sans-serif;
+    color: #F2F2F2;
+    left: 120px;
+    z-index: -5;
+    top: 123px;
   }
-}
-
-.features__item--fork {
-  position: relative;
 }
 
 .features__item--fork::after {
   background-image: url("./../../icons/stack.svg#eat");
-  width: 30px;
-  height: 32px;
   content: "";
   display: block;
   position: absolute;
-  top: 10px;
-  left: 17px;
-
-  @media (min-width: $tablet-width) {
-    top: 70px;
-    left: 25px;
-  }
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .features__item--fork::before {
-  background-color: #68B738;
-  width: 60px;
-  height: 60px;
-  content: "";
-  display: block;
-  position: absolute;
-  top: -2px;
-  left: 1px;
-
   @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
-    top: 50px;
+    content: "3";
+    display: block;
+    position: absolute;
+    font-size: 280px;
+    font-family: "Oswald", "Arial", sans-serif;
+    color: #F2F2F2;
+    left: 120px;
+    z-index: -5;
+    top: 123px;
   }
-}
-
-.features__item--clock {
-  position: relative;
 }
 
 .features__item--clock::after {
   background-image: url("./../../icons/stack.svg#clock");
-  width: 30px;
-  height: 32px;
   content: "";
   display: block;
   position: absolute;
-  top: 10px;
-  left: 17px;
-
-  @media (min-width: $tablet-width) {
-    top: 70px;
-    left: 25px;
-  }
+  background-size: 26px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .features__item--clock::before {
+  @media (min-width: $tablet-width) {
+    content: "4";
+    display: block;
+    position: absolute;
+    font-size: 280px;
+    font-family: "Oswald", "Arial", sans-serif;
+    color: #F2F2F2;
+    left: 120px;
+    z-index: -5;
+    top: 123px;
+  }
+}
+
+.features__item::after {
+  content: "";
+  display: block;
   background-color: #68B738;
   width: 60px;
   height: 60px;
-  content: "";
-  display: block;
   position: absolute;
-  top: -2px;
+  top: -3px;
   left: 1px;
 
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
-    top: 50px;
+    top: 35px;
   }
 }
-
-

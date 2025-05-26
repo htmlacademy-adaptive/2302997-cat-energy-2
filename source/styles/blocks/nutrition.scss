@@ -28,7 +28,7 @@
 }
 
 .nutrition__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
@@ -52,11 +52,12 @@
 
   @media (min-width: $desktop-width) {
     width: 420px;
+    margin-top: 80px;
   }
 }
 
 .nutrition__text {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   color: #ffffff;
@@ -83,7 +84,7 @@
 }
 
 .nutrition__link {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -104,26 +105,52 @@
     padding-top: 14px;
     padding-bottom: 14px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 266px;
+  }
 }
 
-.nutrition_img {
+.nutrition__link:hover {
+  background-color: #5EAA2F;
+}
+
+.nutrition__link:active{
+  background-color: #5EAA2F;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nutrition__img {
   position: absolute;
   top: 60px;
   left: 50%;
   transform: translate(-50%, 50%);
+  width: 280px;
+  height: 270px;
 
   @media (min-width: $tablet-width) {
     display: block;
     position: relative;
     top: -377px;
     z-index: -5;
+    width: 709px;
+    height: 609px;
   }
 
   @media (min-width: $desktop-width) {
-    position: static;
+    position: absolute;
     transform: unset;
-    padding-right: 332px;
+    z-index: 5;
+    top: 0;
+    left: 800px;
+    width: 552px;
+    height: 499px;
   }
+}
+
+.nutrition__img-img {
+  width: 100%;
+  height: 100%;
 }
 
 .nutrition__wrapper-text {
@@ -135,3 +162,14 @@
 .nutrition__wrapper-pictures {
   align-items: center;
 }
+
+.cat-one {
+  width: 100%;
+  height: 100%;
+}
+
+.cat-two {
+  width: 100%;
+  height: 100%;
+}
+

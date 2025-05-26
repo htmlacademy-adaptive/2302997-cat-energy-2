@@ -3,16 +3,40 @@
 
   @media (min-width: $tablet-width) {
     background-color: white;
+    position: relative;
+  }
+}
+
+.example::before {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 472px;
+    background-color: #EAEAEA;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    background-color: #F2F2F2;
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 472px;
+    background-color: #EAEAEA;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
   }
 }
 
 .example__wrapper {
   margin-left: 20px;
   margin-right: 20px;
+  z-index: -1;
 
   @media (min-width: $tablet-width) {
     margin-left: 30px;
@@ -22,28 +46,35 @@
   @media (min-width: $desktop-width) {
     margin-left: 110px;
     margin-right: 110px;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 .example__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
   margin: 0;
   padding-top: 25px;
   padding-bottom: 25px;
+  margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     padding-top: 45px;
     padding-bottom: 60px;
+    margin-left: 30px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
     padding-bottom: 76px;
+    margin-left: 110px;
   }
 }
 
@@ -70,7 +101,7 @@
   }
 }
 
-.example_result {
+.example__result {
   display: flex;
   justify-content: space-between;
 
@@ -84,24 +115,38 @@
 }
 
 .example__result-wrapper {
+  border: #CDCDCD solid 1px;
+  position: relative;
+
   @media (min-width: $tablet-width) {
     margin-right: 43px;
+    height: 77px;
   }
 }
 
 .example__result-significance {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
   margin: 0;
   padding-top: 14px;
   padding-left: 43px;
+  padding-right: 43px;
+  padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    padding-left: 57px;
+    padding-right: 57px;
+    padding-bottom: 11px;
   }
+}
+
+.example__result-significance--second {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .example__result-description {
@@ -109,20 +154,53 @@
   line-height: 12px;
   color: #444444;
   text-align: center;
+  display: block;
+  position: absolute;
+  background-color: #EAEAEA;
+  padding-left: 7px;
+  padding-right: 7px;
+  max-width: 77px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
+    bottom: -4px;
+    background-color: #ffFfFf;
+    max-width: 135px;
+    padding-left: 3px;
+    padding-right: 3px;
+    left: 50%;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #EAEAEA;
+    bottom: -8px;
+  }
+}
+
+.span {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+    margin-left: 63px;
   }
 }
 
 .example__cost {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 38px;
   margin-bottom: 20px;
   text-align: center;
 
@@ -131,6 +209,7 @@
     line-height: 20px;
     width: 174px;
     text-align: end;
+    margin-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -143,10 +222,57 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 99px;
+    margin-bottom: 180px;
   }
 
   @media (min-width: $desktop-width) {
     display: unset;
   }
+}
+
+.example__picture-container {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  grid-column: 1/-1;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    bottom: 100px;
+  }
+}
+
+.overlay-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cat-one {
+  clip-path: inset(0 50% 0 0);
+}
+
+.cat-two {
+  clip-path: inset(0 0 0 50%);
+}
+
+.example__picture-button {
+  border: none;
+  position: absolute;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.example__picture-svg {
+  height: 256px;
+  width: 40px;
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+  }
+}
+
+.example__picture-svg:hover {
+  color: #68B738;
 }

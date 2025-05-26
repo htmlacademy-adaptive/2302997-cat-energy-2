@@ -12,44 +12,52 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo" href="#">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59" type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
-          <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
-        </picture>
-      </a>
-      <a class="main-header__logo-text" href="#">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="images/logo-text.svg" width="118" height="21" type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="images/logo-text.svg" width="101" height="18" type="image/svg+xml">
-          <img src="images/logo-text.svg" width="101" height="18" alt="Логотип Cat Energy.">
-        </picture>
-      </a>
-      <nav class="main-nav">
+      <div class="main-header__top">
+        <div class="main-header__logo-wrapper">
+          <a class="main-header__logo" href="#">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59"
+                type="image/svg+xml">
+              <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50"
+                type="image/svg+xml">
+              <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+            </picture>
+          </a>
+          <a class="main-header__logo-text" href="#">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/logo-text.svg" width="118" height="21"
+                type="image/svg+xml">
+              <source media="(min-width: 768px)" srcset="images/logo-text.svg" width="101" height="18"
+                type="image/svg+xml">
+              <img src="images/logo-text.svg" width="101" height="18" alt="Логотип Cat Energy.">
+            </picture>
+          </a>
+        </div>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="main-nav__wrapper">
+      </div>
+      <div class="main-header__bottom">
+        <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
+              <a class="main-nav__link main-nav__link-catalog" href="index.html">
                 Главная
               </a>
             </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link" href="#">
+            <li class="main-nav__item main-nav__item--active main-nav__item--active-catalog">
+              <a class="main-nav__link main-nav__link-catalog" href="#">
                 Каталог продукции
               </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">
+              <a class="main-nav__link main-nav__link-catalog" href="#">
                 Подбор программы
               </a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
     <main class="main-catalog">
       <section class="catalog">
@@ -58,9 +66,12 @@
           <ul class="catalog__list">
             <li class="catalog__item">
               <picture class="catalog__picture">
-                <source width="161" height="172" type="image/png" media="(min-width: 1440px)" srcset="images/catalog-desktop-1@1x.png 1x, images/catalog-desktop-1@2x.png 2x" >
+                <source type="image/webp" media="(min-width: 1440px)" srcset="images/catalog-desktop-1@1x.webp 1x, images/catalog-desktop-1@2x.webp 2x">
+                <source width="161" height="172" type="image/png" media="(min-width: 1440px)" srcset="images/catalog-desktop-1@1x.png 1x, images/catalog-desktop-1@2x.png 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/catalog-tablet-1@1x.webp 1x, images/catalog-tablet-1@2x.webp 2x">
                 <source width="161" height="172" type="image/png" media="(min-width: 768px)" srcset="images/catalog-tablet-1@1x.png 1x, images/catalog-tablet-1@2x.png 2x">
-                <img src="images/catalog-mob-1@1x.png" srcset="images/catalog-mob-1@2x.png 2x" alt="Cat Energy PRO 500 г" width="68" height="86">
+                <source type="image/webp" srcset="images/catalog-mob-1@1x.webp 1x, images/catalog-mob-1@2x.webp 2x">
+                <img src="images/catalog-mob-1@1x.png" class="catalog__picture-product" srcset="images/catalog-mob-1@2x.png 2x" alt="Cat Energy PRO 500 г" width="68" height="86">
               </picture>
               <h2 class="catalog__name">Cat Energy PRO 500 г</h2>
               <dl class="catalog__description-list">
@@ -81,9 +92,12 @@
             </li>
             <li class="catalog__item">
               <picture class="catalog__picture">
-                <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="images/catalog-desktop-2@1x.png 1x, images/catalog-desktop-2@2x.png 2x" >
+                <source type="image/webp" media="(min-width: 1440px)" srcset="images/catalog-desktop-2@1x.webp 1x, images/catalog-desktop-2@2x.webp 2x">
+                <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="images/catalog-desktop-2@1x.png 1x, images/catalog-desktop-2@2x.png 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/catalog-tablet-2@1x.webp 1x, images/catalog-tablet-2@2x.webp 2x">
                 <source width="168" height="206" type="image/png" media="(min-width: 768px)" srcset="images/catalog-tablet-2@1x.png 1x, images/catalog-tablet-2@2x.png 2x">
-                <img src="images/catalog-mob-2@1x.png" srcset="images/catalog-mob-2@2x.png 2x" alt="Cat Energy PRO 1000 г" width="84" height="100">
+                <source type="image/webp" srcset="images/catalog-mob-2@1x.webp 1x, images/catalog-mob-2@2x.webp 2x">
+                <img src="images/catalog-mob-2@1x.png" class="catalog__picture-product" srcset="images/catalog-mob-2@2x.png 2x" alt="Cat Energy PRO 1000 г" width="84" height="100">
               </picture>
               <h2 class="catalog__name">Cat Energy PRO 1000 г</h2>
               <dl class="catalog__description-list">
@@ -217,7 +231,7 @@
               </dl>
               <button class="catalog__button button button--order" type="button">Заказать</button>
             </li>
-            <li class="catalog__item">
+            <li class="catalog__item catalog__item-white">
               <h2 class="catalog__name-title">Показать еще 100500 товаров</h2>
               <p class="catalog__description">На самом деле вкусов гораздо больше!</p>
               <button class="catalog__button button button--show" type="button">Показать все</button>
@@ -230,45 +244,60 @@
         <h1 class="additional__title">Дополнительные товары</h1>
         <div class="wrapper">
           <div class="additional__wrapper-table">
-            <div class="additional__wrapper-card">
-              <h2 class="additional__subtitle">Сахарозаменитель</h2>
-              <div class="additional__title-wrapper">
-                <span class="additional__value">1 упаковка (100 г)</span>
-                <span class="additional__price">200 ₽</span>
+            <div class="additional__container">
+              <div class="additional__wrapper-card">
+                <h2 class="additional__subtitle">Сахарозаменитель</h2>
+                <div class="additional__title-wrapper">
+                  <span class="additional__value">1 упаковка (100 г)</span>
+                  <span class="additional__price">200 ₽</span>
+                </div>
               </div>
-              <button class="additional__button button button--order" type="button">Заказать</button>
-            </div>
-            <div class="additional__wrapper-card">
-              <h2 class="additional__subtitle">Питьевая вода</h2>
-              <div class="additional__title-wrapper">
-                <span class="additional__value">5 литров</span>
-                <span class="additional__price">50 ₽</span>
+              <div class="additional__wrapper-button">
+                <button class="additional__button button button--order" type="button">Заказать</button>
               </div>
-              <button class="additional__button button button--order" type="button">Заказать</button>
             </div>
-            <div class="additional__wrapper-card">
-              <h2 class="additional__subtitle">Молоко</h2>
-              <div class="additional__title-wrapper">
-                <span class="additional__value">1 литр</span>
-                <span class="additional__price">100 ₽</span>
+            <div class="additional__container">
+              <div class="additional__wrapper-card">
+                <h2 class="additional__subtitle">Питьевая вода</h2>
+                <div class="additional__title-wrapper">
+                  <span class="additional__value">5 литров</span>
+                  <span class="additional__price">50 ₽</span>
+                </div>
               </div>
-              <button class="additional__button button button--order" type="button">Заказать</button>
-            </div>
-            <div class="additional__wrapper-card">
-              <h2 class="additional__subtitle">Витамины</h2>
-              <div class="additional__title-wrapper">
-                <span class="additional__value">1 упаковка (30 г)</span>
-                <span class="additional__price">300 ₽</span>
+              <div class="additional__wrapper-button">
+                <button class="additional__button button button--order" type="button">Заказать</button>
               </div>
-              <button class="additional__button button button--order" type="button">Заказать</button>
             </div>
-          </div>
+            <div class="additional__container">
+              <div class="additional__wrapper-card">
+                <h2 class="additional__subtitle">Молоко</h2>
+                <div class="additional__title-wrapper">
+                  <span class="additional__value">1 литр</span>
+                  <span class="additional__price">100 ₽</span>
+                </div>
+              </div>
+              <div class="additional__wrapper-button">
+                <button class="additional__button button button--order" type="button">Заказать</button>
+              </div>
+            </div>
+            <div class="additional__container">
+              <div class="additional__wrapper-card">
+                <h2 class="additional__subtitle">Витамины</h2>
+                <div class="additional__title-wrapper">
+                  <span class="additional__value">1 упаковка (30 г)</span>
+                  <span class="additional__price">300 ₽</span>
+                </div>
+              </div>
+              <div class="additional__wrapper-button">
+                <button class="additional__button button button--order" type="button">Заказать</button>
+              </div>
+            </div>
+        </div>
           <div class="present-wrapper">
             <p class="present-wrapper__text">Закажите все
               и получите чехол для
               кота в подарок!</p>
           </div>
-        </div>
         </div>
       </section>
       <section class="action">
@@ -281,20 +310,23 @@
           </form>
         </div>
       </section>
-      <section class="map">
-        <div class="map__contacts">
-          <h2 class="visually-hidden">Контакты</h2>
-          <b class="map__title">Приглашаем к сотрудничеству дилеров!</b>
-          <address class="map__adress">
-            ул. Большая Конюшенная, д. 19/8<br>
-            Санкт-Петербург
-          </address>
-        </div>
+      <section class="map map-catalog">
         <div class="map__wrapper">
-          <picture>
-            <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" >
-            <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x,  images/map-tablet@2x.png 2x">
-            <img src="images/map-mob@1x.png" srcset="images/map-mob@2x.png 2x" alt="Карта" width="320" height="362">
+          <div class="map__contacts">
+            <h2 class="visually-hidden">Контакты</h2>
+            <b class="map__title">Приглашаем к сотрудничеству дилеров!</b>
+            <address class="map__adress">
+              ул. Большая Конюшенная, д. 19/8<br>
+              <span class="map_span">Санкт-Петербург</span>
+            </address>
+          </div>
+          <picture class="map_picture">
+            <source type="image/webp" media="(min-width: 1440px)" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x">
+            <source width="100%" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" >
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x">
+            <source width="100%" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x,  images/map-tablet@2x.png 2x">
+            <source type="image/webp" srcset="images/map-mob@1x.webp 1x, images/map-mob@2x.webp 2x">
+            <img class="map__picture-img" src="images/map-mob@1x.png" srcset="images/map-mob@2x.png 2x" alt="Карта" width="100%" height="362">
           </picture>
         </div>
       </section>
@@ -302,44 +334,46 @@
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <div class="main-footer__logo">
-          <a class="main-footer__logo-text" href="#">
-            <picture>
-              <img src="images/logo-text.svg" width="128" height="24" alt="Логотип HTML.">
-            </picture>
-          </a>
+          <picture class="main-footer__picture">
+            <img src="images/logo-text.svg" width="128" height="24" alt="Логотип HTML.">
+          </picture>
         </div>
         <div class="main-footer__social social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">В контакте</span>
-                <picture>
-                  <img src="images/telegram.svg" width="28" height="22" alt="Логотип HTML.">
-                </picture>
-              </a>
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Телеграмм</span>
+                <svg width="28" height="22">
+                  <use xlink:href="icons/stack.svg#vkontakte"></use>
+                </svg>
+            </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Ютуб</span>
-                <picture>
-                  <img src="images/youtube.svg" width="28" height="22" alt="Логотип HTML.">
-                </picture>
+                <svg width="28" height="22">
+                  <use xlink:href="icons/stack.svg#youtube"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Телеграмм</span>
-                <picture>
-                  <img src="images/vkontakte.svg" width="28" height="22" alt="Логотип HTML.">
-                </picture>
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">В контакте</span>
+                <svg width="28" height="22">
+                  <use xlink:href="icons/stack.svg#telegram"></use>
+                </svg>
               </a>
             </li>
           </ul>
         </div>
         <div class="main-footer__logo-html logo-html">
-          <p class="logo-html__title">HTML Academy</p>
-          <img src="images/logo-html.svg" width="33" height="38" alt="Логотип HTML.">
+          <a class="main-footer__link" href="https://htmlacademy.ru/study">
+            <p class="logo-html__title">HTML Academy</p>
+          </a>
+          <a href="https://htmlacademy.ru/study">
+            <img class="logo-html-img" src="images/logo-html.svg" width="27" height="34" alt="Логотип HTML.">
+          </a>
         </div>
       </div>
     </footer>

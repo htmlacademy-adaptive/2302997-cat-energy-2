@@ -6,6 +6,15 @@
   margin-left: 20px;
   margin-right: 20px;
 
+  @media (min-width: $tablet-width) {
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-left: 110px;
     margin-right: 110px;
@@ -21,17 +30,40 @@
   padding-bottom: 40px;
   display: flex;
   justify-content: center;
+  position: relative;
+  cursor: pointer;
 
   @media (min-width: $desktop-width) {
     padding: 0;
   }
 }
 
+.main-footer__picture::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 330px;
+  height: 1px;
+  background-color: #D9D9D9;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .main-footer__logo {
   margin: 0 auto;
 
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
   @media (min-width: $desktop-width) {
     margin: 0;
+    padding-top: 10px;
   }
 }
 
@@ -41,10 +73,27 @@
   margin: 0 auto;
   padding: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .social__item {
   margin-right: 24px;
+}
+
+.social__item a {
+  color: #666666;
+}
+
+.social__item a:hover {
+  color: #68B738;
+}
+
+.social__item a:active {
+  color: #68B738;
+  opacity: 0.5;
 }
 
 .main-footer__logo-text {
@@ -52,12 +101,40 @@
 }
 
 .main-footer__social {
+  position: relative;
 
+  @media (min-width: $tablet-width) {
+    align-self: center;
+  }
+}
+
+.main-footer__social::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 330px;
+  height: 1px;
+  background-color: #D9D9D9;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-footer__logo-html {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 5px;
+  }
 }
 
 .logo-html__title {
@@ -65,8 +142,29 @@
   margin-bottom: 47px;
   padding-top: 7px;
   padding-bottom: 7px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-right: 23px;
+  }
+}
+
+.logo-html__title:active {
+  opacity: 0.2;
 }
 
 .logo-html-img {
 
+}
+
+.main-footer__link {
+  text-decoration: none;
+}
+
+.main-footer__picture:hover {
+  opacity: 0.8;
+}
+
+.main-footer__picture:active {
+  opacity: 0.5;
 }
