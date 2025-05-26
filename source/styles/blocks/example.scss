@@ -239,7 +239,6 @@
 
   @media (min-width: $tablet-width) {
     bottom: 100px;
-    right: 5%;
   }
 }
 
@@ -259,9 +258,21 @@
 }
 
 .example__picture-button {
-  background-image: url("./../../icons/stack.svg#curtain");
-  height: 256px;
-  width: 40px;
   border: none;
   position: absolute;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.example__picture-svg {
+  height: 256px;
+  width: 40px;
+
+  @media (min-width: $tablet-width) {
+    height: 512px;
+  }
+}
+
+.example__picture-svg:hover {
+  color: #68B738;
 }
